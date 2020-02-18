@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Course Add Page
+        </title>
+    </head>
+    <body>
+    <form action="/adtaa/add/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+    </body>
+</html>

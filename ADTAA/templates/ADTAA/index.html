@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADTAA Index</title>
+</head>
+<body>
+    {% if courseList %}
+            <ul>
+            {% for course in courseList %}
+                <li>{{ course.getClassInfo }}</li>
+            {% endfor %}
+
+            </ul>
+        {% else %}
+        <p>Currently, no courses in system.</p>
+
+
+
+        {% endif %}
+    <p><a href = "/adtaa/add/">Add Course</a></p>
+</body>
+</html>
